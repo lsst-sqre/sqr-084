@@ -76,6 +76,13 @@ Times Square notebooks can query Rubin's Jira API and generate a summary of issu
 The "OBS issues" notebook queries for issues in the OBS Jira Project within a parameterized date range and uses Pandas to generate an HTML table of the issues.
 On a technical level, this notebook also demonstrates a solution for accessing data APIs that require authentication by way of a proxy service (see [SQR-083](https://sqr-083.lsst.io/)).
 
+```{figure} jira.png
+:alt: Screenshot of Times Square showing a notebook with a table of Jira issues.
+:width: 100%
+
+Jira issue summary notebook demo.
+```
+
 ### Weather data from the EFD
 
 ```{button-link} https://usdf-rsp-dev.slac.stanford.edu/times-square/github/lsst-sqre/times-square-usdf/night-reports/weather
@@ -87,6 +94,13 @@ On a technical level, this notebook also demonstrates a solution for accessing d
 
 Times Square notebooks can tap into EFD data to generates plots and statistics.
 As an example, the "Weather" notebook queries the EFD for weather and seeing data and to plot conditions over the course of a night.
+
+```{figure} weather.png
+:alt: Screenshot of Times Square showing time series plots of seeing, temperature, pressure, and windspeed over a night.
+:width: 100%
+
+Demo of plotting weather data from the EFD.
+```
 
 ### Almanac
 
@@ -100,3 +114,10 @@ As an example, the "Weather" notebook queries the EFD for weather and seeing dat
 Observing reports commonly include basic information about the timing of sun and moon rise and set, and well as moon phase.
 Since a notebook is Python, a Times Square night report can calculate these values.
 Values like the twilight periods can also be used throughout a notebook to annotate time series plots.
+
+```{figure} almanac.png
+:alt: Screenshot of Times Square showing a table of sunrise and set times and plot of the moon's altitude over the night.
+:width: 100%
+
+Demo of almanac calculations.
+```
