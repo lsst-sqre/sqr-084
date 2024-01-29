@@ -12,6 +12,9 @@ license.id = "CC-BY-4.0"
 [technote.status]
 state = "draft"
 
+[technote.sphinx]
+extensions = ["sphinx_design"]
+
 [[technote.authors]]
 name.given = "Frossie"
 name.family = "Economou"

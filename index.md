@@ -59,3 +59,44 @@ Limitations that are inherent in this model and cannot be addressed:
 The question for the project is whether the immediate availability of the Times Square capabilities (ie getting substantial but not everything one could think of functionality "for free") outweigh the inherent limitations in this model.
 
 ## Examples
+
+We've prepared examples of notebooks featuring the kinds of information that might be commonly included in an observatory report.
+These demos are available in the [lsst-sqre/times-square-usdf](https://github.com/lsst-sqre/times-square-usdf) GitHub repository and are published on the ["dev" RSP environment at the USDF](https://usdf-rsp-dev.slac.stanford.edu/times-square), which is accessible with SLAC credentials.
+
+### Jira issue summary
+
+```{button-link} https://usdf-rsp-dev.slac.stanford.edu/times-square/github/lsst-sqre/times-square-usdf/night-reports/obs-tickets
+:color: primary
+:outline:
+
+{octicon}`link-external;1em` View "OBS issues" notebook
+```
+
+Times Square notebooks can query Rubin's Jira API and generate a summary of issues.
+The "OBS issues" notebook queries for issues in the OBS Jira Project within a parameterized date range and uses Pandas to generate an HTML table of the issues.
+On a technical level, this notebook also demonstrates a solution for accessing data APIs that require authentication by way of a proxy service (see [SQR-083](https://sqr-083.lsst.io/)).
+
+### Weather data from the EFD
+
+```{button-link} https://usdf-rsp-dev.slac.stanford.edu/times-square/github/lsst-sqre/times-square-usdf/night-reports/weather
+:color: primary
+:outline:
+
+{octicon}`link-external;1em` View "Weather" notebook
+```
+
+Times Square notebooks can tap into EFD data to generates plots and statistics.
+As an example, the "Weather" notebook queries the EFD for weather and seeing data and to plot conditions over the course of a night.
+
+### Almanac
+
+```{button-link} https://usdf-rsp-dev.slac.stanford.edu/times-square/github/lsst-sqre/times-square-usdf/night-reports/almanac
+:color: primary
+:outline:
+
+{octicon}`link-external;1em` View "Almanac" notebook
+```
+
+Observing reports commonly include basic information about the timing of sun and moon rise and set, and well as moon phase.
+Since a notebook is Python, a Times Square night report can calculate these values.
+Values like the twilight periods can also be used throughout a notebook to annotate time series plots.
